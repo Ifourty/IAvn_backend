@@ -2,61 +2,19 @@
 {
     "mainCharacters": [ 
         {
-            "id": 1,
-            "type": "Character",
-            "name": "", // nom
-            "desc": "", // explique précisément le personnage et sa façon de penser, peut contenir du passé. En général, cette partie permet de faire prendre vie au personnage.
-            "status": {
-                "current": "Alive",
-                "deathAt": null, // null si vivant
-                "deathInfo": null // null si vivant
-            }
-        }
-    ],
-}
-
-créer les derniers détails du monde, plus il y a de detail plus l'histoire prend vie. Il peut y avoir plusieurs personnage qui peuvent etre des personalité importante comme des proches du main cast (vivant ou mort), ...
-Les villes peuvent être des points clé de l'histoire il ne faut pas les sous estimé
-
-la troisème : 
-{
-    "data": [ // contient une première version des données qui seront mises à jour tout au long de l'histoire
-        {
             "id": 2,
             "type": "Character",
             "new": true,
             "update": false,
             "name": "Nom",
             "desc": "Like this , ...",
+            "sexe": "F/H"
+            "charaType" : "" // can be "mainchara_h_1-3", "mainchara_f_1-3"
             "status": {
-                "current": "Dead",
-                "deathAt": "Ville", // peut aussi être non précisé
-                "deathInfo": "xx Know her death, xx saw her death, xx hear about her death during ... (chapter 2)"
+                "current": "Alive",
+                "deathAt": "", 
+                "deathInfo": ""
             }
         },
-        {
-            "id": 3,
-            "type": "City",
-            "new": true,
-            "update": false,
-            "name": "Ville",
-            "positionCenter": {
-                "x": 10,
-                "y": 200
-            },
-            "desc": "Une petite ville tatatatata"
-        },
-        {
-            "id": 4,
-            "type": "Region",
-            "new": false,
-            "update": true,
-            "name" : "Region"
-            "cityList": ["Ville"],
-            "positionCenter": {
-                "x": 152,
-                "y": 455
-            }
-        }
-    ]
+    ],
 }

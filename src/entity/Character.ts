@@ -7,6 +7,8 @@ export class Character implements Data {
     update: boolean;
     name: string;
     desc: string;
+    charaType: string;
+    sexe: string;
     status: {
         current: string;
         deathAt: string;
