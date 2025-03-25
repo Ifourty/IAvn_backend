@@ -1,0 +1,16 @@
+worldGen v2 (réponse en JSON):
+
+Génère un monde et 3 personnes qui seront les personnes principaux.
+La réponse doit être sous la forme d'un json.
+la génération du monde doit être suffisament précise et doit contenir quelques lieux.
+
+la génération se fait en 3 phase donc ne fait pas toutes les phases en meme temps, l'utilisateur donnera quel phase 
+il est actuellement et tu répond avec le bon json
+
+La première :
+
+créer de façons détailé le monde
+
+{
+    "worldStory": "", // string qui explique le monde et comment il fonctionne 
+}

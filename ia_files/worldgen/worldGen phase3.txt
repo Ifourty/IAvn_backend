@@ -1,0 +1,53 @@
+3 ème phase (NE REMET PAS LE MAIN CAST DEJA FAIT SAUF SI TU FAIT UN UPDATE, LE DATA PERMET DE RAJOUTER DES INFOS AU SERVER)
+
+type possibles : Character,City,Region,Faction 
+ne créer pas de nouveau type.
+{
+    "data": [ // contient une première version des données qui seront mises à jour tout au long de l'histoire
+        {
+            "id": 2,
+            "type": "Character",
+            "new": true,
+            "update": false,
+            "name": "Nom",
+            "desc": "Like this , ...",
+            "status": {
+                "current": "Dead",
+                "deathAt": "Ville", // peut aussi être non précisé
+                "deathInfo": "xx Know her death, xx saw her death, xx hear about her death during ... (chapter 2)"
+            }
+        },
+        {
+            "id": 3,
+            "type": "City",
+            "new": true,
+            "update": false,
+            "name": "Ville",
+            "positionCenter": {
+                "x": 10,
+                "y": 200
+            },
+            "desc": "Une petite ville tatatatata"
+        },
+        {
+            "id": 4,
+            "type": "Region",
+            "new": false,
+            "update": true,
+            "name" : "Region"
+            "cityList": ["Ville"],
+            "positionCenter": {
+                "x": 152,
+                "y": 455
+            }
+        },
+        {
+            "id": 5,
+            "type": "Faction",
+            "new": true,
+            "update": false,
+            "name": "Faction",
+            "desc": ""
+        }
+    ]
+}
